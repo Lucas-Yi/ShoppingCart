@@ -1,0 +1,46 @@
+:root{
+    --primary: #4CAF50;
+    --secondary: #FFC107;
+    --light-gray: #DADCE0;
+}
+
+.ui-link {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.ui-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.ui-textfield {
+  padding: 12px 10px;
+  border-radius: 3px;
+  border: 1px solid var(--light-gray);
+  font-size: 16px;
+}
+
+.ui-button {
+  background-color: var(--primary);
+  color: white;
+  border: 0;
+  padding: 15px 20px;
+  min-width: 150px;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: opacity 200ms ease-out;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.ui-button:hover {
+    opacity: 0.8;
+}
+.ui-button:disabled {
+    opacity: 0.4;
+    cursor: disabled;
+}
+
+[class^="ui-"] {
+    margin: 10px;
+}
