@@ -6,11 +6,10 @@ import Home from "./pages/Home.js"
 import About from "./pages/About.js"
 import Products from "./pages/Products.js"
 import Cart from "./pages/Cart.js"
+import ProductDetails from "./entity/ProductDetails.js";
 import "./index.css"
-// import Link from "./Link.js"
 // import Button from "./Button.js"
 // import Input from "./Input.js"
-// import Container from "./Container.js"
 
 function App() {
 
@@ -27,6 +26,9 @@ function App() {
                     </Route>
                     <Route exact path="/products">
                         <Products />
+                    </Route>
+                    <Route path="/products/:id">
+                        <ProductDetails/>
                     </Route>
                     <Route exact path="/cart">
                         <Cart />
