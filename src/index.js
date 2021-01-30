@@ -55,7 +55,7 @@ function App() {
       }
 
     return(
-        <div class="container">
+        <div className="container">
             <BrowserRouter>
                 <Navbar cart={cart}/>
                 <Switch>

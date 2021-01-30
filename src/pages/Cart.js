@@ -56,10 +56,10 @@ export default function Cart(props) {
         {cart.length === 0 && <p>You have not added any product to your cart yet.</p>}
       </div>
       {cart.length > 0 && <>
-        <table class="table table-cart">
+        <table className="table table-cart">
           <thead>
             <tr>
-              <th width="25%" class="th-product">Product</th>
+              <th width="25%" className="th-product">Product</th>
               <th width="20%">Unit price</th>
               <th width="10%">Quanity</th>
               <th width="25%">Total</th>
@@ -69,7 +69,7 @@ export default function Cart(props) {
             {cart.map(product=>{
               console.log(cart)
               return(
-                <tr>
+                <tr key={product.id}>
                   <td>
                     <img width="30" height="30" alt="" src={product.image}/>
                     {product.name}
@@ -86,17 +86,17 @@ export default function Cart(props) {
           <tfoot>
             <tr>
               <th colSpan="2"></th>
-              <th class="cart-highlight">{totalQuantity}</th>
-              <th class="cart-highlight">${totalPrice}</th>
+              <th className="cart-highlight">{totalQuantity}</th>
+              <th className="cart-highlight">${totalPrice}</th>
             </tr>
           </tfoot>
         </table>
-        <form class="pay-form" onSubmit={handlePayClick}>
+        <form className="pay-form" onSubmit={handlePayClick}>
               <p>
                 Enter your email and then click on pay and your products will be
                 delivered to you on the same day!
               </p>
-              <Input autocomplete="email" placeholder="Email" type="email" required onChange={handleEmailChange} value={email}/>
+              <Input autoComplete="email" placeholder="Email" type="email" required onChange={handleEmailChange} value={email}/>
               <Button type="submit">Pay</Button>
             </form>
       </>}

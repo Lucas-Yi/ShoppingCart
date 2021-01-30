@@ -5,9 +5,9 @@ export default function Input(props) {
     const {placeholder, type="type", className, required, ...rest} = props
     const classNames = Clsx("input", className)
     return <>
-        <label class="label">
+        <label className="label">
             {placeholder}
-            {required && <span class="input-required">*</span>}
+            {required && <span className="input-required">*</span>}
             <div>
                 <input type={type} placeholder={placeholder} className={classNames} 
                 required={required} {...rest}/>

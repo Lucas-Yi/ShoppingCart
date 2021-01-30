@@ -15,7 +15,7 @@ export default function ProductDetails(props) {
     get(`productinfo/id${params.id}.json`)
     .then(data=>setProductDetail(data))
     .catch(error=>console.log("Could not load product details", error))
-  }, [])
+  }, [get, params.id])
 
   return <>
     <div class="product-details-layout">
