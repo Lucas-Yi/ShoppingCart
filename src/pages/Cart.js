@@ -31,7 +31,7 @@ export default function Cart(props) {
             return(
               <tr>
                 <td>
-                  <img width="30" height="30" alt="" />
+                  <img width="30" height="30" alt="" src={product.image}/>
                   {product.name}
                 </td>
                 <td>${product.price}</td>

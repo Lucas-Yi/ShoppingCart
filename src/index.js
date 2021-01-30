@@ -36,6 +36,7 @@ function App() {
             price_id:newProduct.price_id, 
             name: newProduct.name,
             price: newProduct.price,
+            image: newProduct.image,
             quantity: 1
          }])
         }
