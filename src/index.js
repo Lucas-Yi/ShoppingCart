@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import {render} from "react-dom"
 import {BrowserRouter, Switch, Route} from "react-router-dom"
 import Navbar from "./pages/Navbar.js"
@@ -13,6 +13,16 @@ import "./index.css"
 
 function App() {
 
+    const [cart, SetCart] = useState([])
+
+    function handleProductAdd(newProduct){
+      console.log("Adding product " + newProduct.id)
+    }
+  
+    function handleProductDelete(id){
+      console.log("Deleting product " + id)
+    }
+
     return(
         <div class="container">
             <BrowserRouter>
@@ -25,13 +35,13 @@ function App() {
                         <About />
                     </Route>
                     <Route exact path="/products">
-                        <Products />
+                        <Products cart={cart} onProductAdd={handleProductAdd} onProductDelete={handleProductDelete} />
                     </Route>
                     <Route path="/products/:id">
-                        <ProductDetails/>
+                        <ProductDetails cart={cart} onProductAdd={handleProductAdd}/>
                     </Route>
                     <Route exact path="/cart">
-                        <Cart />
+                        <Cart cart={cart}/>
                     </Route>
                 </Switch>
             </BrowserRouter>

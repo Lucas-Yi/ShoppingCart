@@ -3,7 +3,7 @@ import useFetch from "../ultility/useFetch.js"
 import Loader from "../component/Loader.js"
 import Product from "../entity/Product.js"
 
-export default function Products() {
+export default function Products(props) {
 
     const [products, setProducts] = useState([])
     const {get, loading} = useFetch("https://react-tutorial-demo.firebaseio.com/")
@@ -23,7 +23,12 @@ export default function Products() {
             <div class="products-grid">
                 {loading && <Loader />}
                 {products.map(product => 
-                    <Product key={product.id} details={product} />
+                    <Product
+                     key={product.id} 
+                     details={product} 
+                     onProductAdd={props.onProductAdd} 
+                     onProductDelete={props.onProductDelete}
+                     />
                 )}
             </div>
         </div>

@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function ProductDetailInfo({product}) {
+export default function ProductDetailInfo({product, onProductAdd}) {
   return <>
     <p>
       {product.description} sold at <strong>${product.price}</strong> per piece.
     </p>
-    <button>${product.price}</button>
+    <button onClick={()=>onProductAdd(product)}>${product.price}</button>
   </>
 }
