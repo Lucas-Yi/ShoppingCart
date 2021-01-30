@@ -35,6 +35,7 @@ function App() {
             id:newProduct.id, 
             price_id:newProduct.price_id, 
             name: newProduct.name,
+            price: newProduct.price,
             quantity: 1
          }])
         }
