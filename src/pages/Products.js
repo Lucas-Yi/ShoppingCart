@@ -26,6 +26,7 @@ export default function Products(props) {
                     <Product
                      key={product.id} 
                      details={product} 
+                     cart={props.cart}
                      onProductAdd={props.onProductAdd} 
                      onProductDelete={props.onProductDelete}
                      />

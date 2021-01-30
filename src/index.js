@@ -13,20 +13,37 @@ import "./index.css"
 
 function App() {
 
-    const [cart, SetCart] = useState([])
+    const [cart, setCart] = useState([])
 
-    function handleProductAdd(newProduct){
-      console.log("Adding product " + newProduct.id)
-    }
-  
-    function handleProductDelete(id){
-      console.log("Deleting product " + id)
-    }
+    function handleProductDelete(id) {
+        const updatedCart = cart.filter(product=>product.id!==id)
+        setCart(updatedCart)
+      }
+    
+      function handleProductAdd(newProduct) {
+        const newProductExist = cart.find(product=>product.id === newProduct.id)
+        if(newProductExist){
+          const updatedCart = cart.map(product=>{
+            if(newProduct.id === product.id){
+              return {...product, quantity:product.quantity+1}
+            }
+            return product
+          })
+          setCart(updatedCart)
+        }else{
+          setCart([...cart, {
+            id:newProduct.id, 
+            price_id:newProduct.price_id, 
+            name: newProduct.name,
+            quantity: 1
+         }])
+        }
+      }
 
     return(
         <div class="container">
             <BrowserRouter>
-                <Navbar />
+                <Navbar cart={cart}/>
                 <Switch>
                     <Route exact path="/">
                         <Home />

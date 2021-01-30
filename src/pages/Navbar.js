@@ -1,7 +1,10 @@
 import React from "react";
 import {NavLink} from "react-router-dom"
 
-export default function Navbar() {
+export default function Navbar(props) {
+  const reducer = (accumulator, currentValue) => accumulator + currentValue.quantity;
+  const totalQuantity = props.cart.reduce(reducer,0)
+
   return (
     <nav className="navbar">
       <NavLink to="/" className="nav-brand">
@@ -25,7 +28,7 @@ export default function Navbar() {
         </li>
         <li>
           <NavLink activeClassName="active" to="/cart" className="nav-item nav-cart btn btn-accent">
-            Cart (0)
+            Cart ({totalQuantity})
           </NavLink>
         </li>
       </ul>
