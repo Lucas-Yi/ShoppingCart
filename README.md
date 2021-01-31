@@ -69,8 +69,7 @@ And products can be added/removed into/from the cart by pressing buttons.
 Cart page is where the client can see a breakdown of the products they ordered, as well as the quantity for each product. 
 
 ![Checkout](https://user-images.githubusercontent.com/13730487/106377644-951eef00-63f2-11eb-8bbd-72f67843fbe7.png)
-Stripe Checkout is also embedded within the project but unfortunately there's sth wrong with the price_id we retrieved from the API. 
-Will work on it soon!
+Stripe Checkout is also embedded within the project ~~
 
 
 ## Contact

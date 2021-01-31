@@ -6,8 +6,8 @@ import Input from "../component/Input.js"
 export default function Cart(props) {
   const [email, setEmail] = useState("")
 
-  const stripeLoadedPromise = loadStripe('pk_test_51IEDKRFd6pPKD4YePVjkBKPexOdlFh6FJTYnnoUPLZdgotEFYhzta75jLNnvdiks3SLpPO8oOKfLs7IqF00K3qHR00rNpThsZB');
-
+  //const stripeLoadedPromise = loadStripe('pk_test_51IEDKRFd6pPKD4YePVjkBKPexOdlFh6FJTYnnoUPLZdgotEFYhzta75jLNnvdiks3SLpPO8oOKfLs7IqF00K3qHR00rNpThsZB');
+  const stripeLoadedPromise = loadStripe("pk_test_51HsqkCGuhXEITAut89vmc4jtjYd7XPs8hWfo2XPef15MFqI8rCFc8NqQU9WutlUBsd8kmNqHBeEmSrdMMpeEEyfT00KzeVdate")
   const { cart } = props
   const totalQuantity = cart.reduce(
     (total, product) => total + product.quantity,
