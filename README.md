@@ -25,7 +25,7 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![Website overview](https://user-images.githubusercontent.com/13730487/106376581-dc08e680-63ea-11eb-862f-6de2373bf8f6.png)
 
 You can find the demo at [Demo](https://lucasyi.netlify.app/) \
 Building this E-Commerce is excited since you can see the improvements by adding features one by one :)\
@@ -58,14 +58,14 @@ and many more!
 
 This project was created as a practise to a react self-learning challenge. \
 
-The 'store' location is labelled with a marker through mapboxgl in ![About us]() page. \
+The 'store' location is labelled with a marker through mapboxgl in ![About us](https://user-images.githubusercontent.com/13730487/106376612-1bcfce00-63eb-11eb-93ee-193f18924b93.png) page. \
 
-Products' information can be fetched thought API and display in ![Products]() page. \
+Products' information can be fetched thought API and display in ![Products](https://user-images.githubusercontent.com/13730487/106376615-1f635500-63eb-11eb-8999-57b8dc9fc882.png) page. \
 And products can be added/removed into/from the cart by pressing buttons.
 
-Cart page ![Cart]() is where the client can see a breakdown of the products they ordered, as well as the quantity for each product. \
+Cart page ![Cart](https://user-images.githubusercontent.com/13730487/106376613-1d999180-63eb-11eb-9011-c2d72fc6ee70.png) is where the client can see a breakdown of the products they ordered, as well as the quantity for each product. \
 
-Stripe Checkout is also embedded within the project but unfortunately there's sth wrong with the price_id we retrieved from the API. \
+Stripe Checkout ![Checkout](https://user-images.githubusercontent.com/13730487/106376614-1ecabe80-63eb-11eb-95d0-db6d6bbf0af3.png) is also embedded within the project but unfortunately there's sth wrong with the price_id we retrieved from the API. \
 Will work on it soon!
 
 
