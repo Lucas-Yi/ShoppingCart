@@ -56,16 +56,20 @@ and many more!
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This project was created as a practise to a react self-learning challenge. \
+This project was created as a practise to a react self-learning challenge.
 
-The 'store' location is labelled with a marker through mapboxgl in ![About us](https://user-images.githubusercontent.com/13730487/106376612-1bcfce00-63eb-11eb-93ee-193f18924b93.png) page. \
+![About us](https://user-images.githubusercontent.com/13730487/106376612-1bcfce00-63eb-11eb-93ee-193f18924b93.png)
+The 'store' location is labelled with a marker through mapboxgl in About us page. 
 
-Products' information can be fetched thought API and display in ![Products](https://user-images.githubusercontent.com/13730487/106376615-1f635500-63eb-11eb-8999-57b8dc9fc882.png) page. \
+![Products](https://user-images.githubusercontent.com/13730487/106376615-1f635500-63eb-11eb-8999-57b8dc9fc882.png)
+Products' information can be fetched thought API and display in Product Page. 
 And products can be added/removed into/from the cart by pressing buttons.
 
-Cart page ![Cart](https://user-images.githubusercontent.com/13730487/106376613-1d999180-63eb-11eb-9011-c2d72fc6ee70.png) is where the client can see a breakdown of the products they ordered, as well as the quantity for each product. \
+![Cart](https://user-images.githubusercontent.com/13730487/106376613-1d999180-63eb-11eb-9011-c2d72fc6ee70.png)
+Cart page is where the client can see a breakdown of the products they ordered, as well as the quantity for each product. 
 
-Stripe Checkout ![Checkout](https://user-images.githubusercontent.com/13730487/106376614-1ecabe80-63eb-11eb-95d0-db6d6bbf0af3.png) is also embedded within the project but unfortunately there's sth wrong with the price_id we retrieved from the API. \
+![Checkout](https://user-images.githubusercontent.com/13730487/106376614-1ecabe80-63eb-11eb-95d0-db6d6bbf0af3.png)
+Stripe Checkout is also embedded within the project but unfortunately there's sth wrong with the price_id we retrieved from the API. 
 Will work on it soon!
 
 
