@@ -12,7 +12,7 @@ export default function MapboxMap(){
             center:  [ 144.965195, -37.809811 ],
             zoom: 15
         });
-        const marker = new mapboxgl.Marker()
+        new mapboxgl.Marker()
             .setLngLat([ 144.965195, -37.809811 ])
             .addTo(map)
     }, []);
